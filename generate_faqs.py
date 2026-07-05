@@ -1,9 +1,63 @@
-<!DOCTYPE html>
+import os
+import glob
+
+# 1. Update existing HTML files with FAQ links
+html_files = ["index.html", "privacy.html", "terms.html", "coming-soon.html", "404.html"]
+
+for f in html_files:
+    if not os.path.exists(f): continue
+    with open(f, "r") as file:
+        content = file.read()
+    
+    # Update Nav
+    if '<li class="nav-item"><a class="nav-link me-lg-3" href="/terms.html">Terms of Service</a></li>' in content:
+        if 'FAQ</a></li>' not in content:
+            content = content.replace(
+                '<li class="nav-item"><a class="nav-link me-lg-3" href="/terms.html">Terms of Service</a></li>',
+                '<li class="nav-item"><a class="nav-link me-lg-3" href="/terms.html">Terms of Service</a></li>\n                        <li class="nav-item"><a class="nav-link me-lg-3" href="/faq.html">FAQ</a></li>'
+            )
+    elif '<li class="nav-item"><a class="nav-link me-lg-3" href="terms.html">Terms of Service</a></li>' in content:
+        if 'FAQ</a></li>' not in content:
+            content = content.replace(
+                '<li class="nav-item"><a class="nav-link me-lg-3" href="terms.html">Terms of Service</a></li>',
+                '<li class="nav-item"><a class="nav-link me-lg-3" href="terms.html">Terms of Service</a></li>\n                        <li class="nav-item"><a class="nav-link me-lg-3" href="faq.html">FAQ</a></li>'
+            )
+            
+    # Update Footer
+    if '<a href="/terms.html">Terms</a>' in content:
+        if 'FAQ</a>' not in content:
+            content = content.replace(
+                '<a href="/terms.html">Terms</a>',
+                '<a href="/terms.html">Terms</a>\n                    <span class="mx-1">&middot;</span>\n                    <a href="/faq.html">FAQ</a>'
+            )
+    elif '<a href="terms.html">Terms</a>' in content:
+        if 'FAQ</a>' not in content:
+            content = content.replace(
+                '<a href="terms.html">Terms</a>',
+                '<a href="terms.html">Terms</a>\n                    <span class="mx-1">&middot;</span>\n                    <a href="faq.html">FAQ</a>'
+            )
+            
+    with open(f, "w") as file:
+        file.write(content)
+
+
+# 2. Create HTML wrapper generation function
+def generate_html(md_filename, output_filename, is_nested=False):
+    title = md_filename.replace(".md", "").replace("_", " ").title() + " - FAQ"
+    
+    # We will use absolute paths to ensure robustness.
+    
+    if is_nested:
+        md_fetch_path = md_filename
+    else:
+        md_fetch_path = md_filename
+
+    html_template = f"""<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Faq - FAQ — FareKeep</title>
+        <title>{title} — FareKeep</title>
         <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -14,24 +68,24 @@
         <!-- Marked.js for markdown rendering -->
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
         <style>
-            #markdown-content h1, #markdown-content h2, #markdown-content h3 {
+            #markdown-content h1, #markdown-content h2, #markdown-content h3 {{
                 font-family: 'Newsreader', serif;
                 margin-top: 1.5rem;
                 margin-bottom: 1rem;
-            }
-            #markdown-content p, #markdown-content li {
+            }}
+            #markdown-content p, #markdown-content li {{
                 font-family: 'Mulish', sans-serif;
                 color: #6c757d;
                 line-height: 1.7;
-            }
+            }}
             /* Ensure links look good */
-            #markdown-content a {
+            #markdown-content a {{
                 color: #1976D2;
                 text-decoration: none;
-            }
-            #markdown-content a:hover {
+            }}
+            #markdown-content a:hover {{
                 text-decoration: underline;
-            }
+            }}
         </style>
     </head>
     <body id="page-top" class="d-flex flex-column min-vh-100 bg-light">
@@ -54,12 +108,6 @@
                         <li class="nav-item"><a class="nav-link me-lg-3" href="/terms.html">Terms of Service</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3 active" href="/faq.html">FAQ</a></li>
                     </ul>
-                    <a class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" href="/feedback.html">
-                        <span class="d-flex align-items-center">
-                            <i class="bi-chat-text-fill me-2"></i>
-                            <span class="small">Feedback</span>
-                        </span>
-                    </a>
                 </div>
             </div>
         </nav>
@@ -90,8 +138,6 @@
                     <a href="/terms.html">Terms</a>
                     <span class="mx-1">&middot;</span>
                     <a href="/faq.html">FAQ</a>
-                    <span class="mx-1">&middot;</span>
-                    <a href="/feedback.html">Feedback</a>
                 </div>
             </div>
         </footer>
@@ -100,21 +146,44 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Markdown loading script -->
         <script>
-            fetch("faq.md")
-                .then(response => {
+            fetch("{md_fetch_path}")
+                .then(response => {{
                     if (!response.ok) throw new Error("File not found");
                     return response.text();
-                })
-                .then(text => {
+                }})
+                .then(text => {{
                     // Rewrite .md links to .html so that cross-linking between FAQs works
                     text = text.replace(/href="([^"]+)\.md"/g, 'href="$1.html"');
                     text = text.replace(/\]\(([^)]+)\.md\)/g, ']($1.html)');
                     document.getElementById('markdown-content').innerHTML = marked.parse(text);
-                })
-                .catch(error => {
+                }})
+                .catch(error => {{
                     document.getElementById('markdown-content').innerHTML = '<p class="text-danger">Error loading content.</p>';
                     console.error('Error loading markdown:', error);
-                });
+                }});
         </script>
     </body>
-</html>
+</html>"""
+    
+    with open(output_filename, "w") as f:
+        f.write(html_template)
+    print(f"Created {output_filename}")
+
+
+# 3. Create faq.html in root
+if os.path.exists("faq.md"):
+    generate_html("faq.md", "faq.html", is_nested=False)
+else:
+    print("No faq.md found in root.")
+
+# 4. Create html wrappers for each .md in faq/
+if os.path.exists("faq"):
+    md_files = glob.glob("faq/*.md")
+    for md_file in md_files:
+        filename = os.path.basename(md_file)
+        html_file = os.path.join("faq", filename.replace(".md", ".html"))
+        generate_html(filename, html_file, is_nested=True)
+else:
+    print("No faq directory found.")
+
+print("Done.")
