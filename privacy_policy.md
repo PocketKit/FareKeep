@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** 12 June 2026
+**Effective Date:** 13 July 2026
 
 ## 1. Introduction
 
@@ -18,8 +18,9 @@ We collect information to provide better services to our users. The type of info
 
 - **Business Profile Information:** Business name, Australian Business Number (ABN), GST registration status, and optional business logo image.
 - **Vehicle Information:** Vehicle registration, make, model, year, type, engine capacity, and descriptive notes.
-- **Logbook & Trip Data:** Logbook start/end dates, odometer readings, logbook mode (open-ended or fixed-period), individual trip records including dates, distances, business/personal classification, and trip purpose descriptions.
-- **Transaction Data:** Income and expense records including dates, amounts, descriptions, expense categories, payment methods, GST amounts, claimable percentages, and claimable method (manual or automatic based on logbook data).
+- **Logbook & Trip Data:** Logbook start/end dates, odometer readings, logbook mode (open-ended or fixed-period), individual trip records including dates, distances, business/personal classification, trip purpose descriptions, and draft status for incomplete trips.
+- **Odometer Snapshots:** Periodic odometer readings (snapshots) for vehicles to accurately estimate business-use percentages across different reporting periods.
+- **Transaction Data:** Income and expense records including dates, amounts, descriptions, expense categories, payment methods, GST amounts, claimable percentages, claimable method (manual or automatic based on logbook data), and draft status for incomplete records.
 - **Receipt & Document Attachments:** Images captured via the device camera or native document scanner, photos selected from the device gallery, and PDF files picked from device storage. These attachments are compressed and stored locally on your device.
 - **Google Account Information:** When you sign in via Google Sign-In for the backup feature, we access your Google account name and email address solely to authenticate with Google Drive.
 

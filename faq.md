@@ -3,6 +3,7 @@
 ## Getting Started
 - [Guest vs Signed-in Account](faq/guest_vs_signed_in) — Understand the differences
 - [How to manage categories & payment methods](faq/master_data) — Customise dropdowns
+- [Saving Draft Transactions & Trips](faq/draft_records) — Save incomplete records for later
 
 ## Tax & GST
 - [What is GST Registration?](faq/gst_registration) — When and why to register

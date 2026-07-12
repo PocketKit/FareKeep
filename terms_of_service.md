@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** 23 June 2026
+**Effective Date:** 13 July 2026
 
 ## 1. Introduction
 
@@ -17,7 +17,9 @@ You must be at least 18 years of age to use the App. By using the App, you repre
 FareKeep provides tools to help you:
 
 - Record income and expense transactions with receipt attachments
+- Save incomplete transactions and trips as drafts for later completion
 - Maintain vehicle logbooks and trip records for tax purposes
+- Record period-end odometer snapshots for accurate logbook tracking
 - Track GST obligations and generate GST/BAS-related reports
 - Manage multiple business profiles with separate records
 - Generate PDF and Excel reports for tax reporting
