@@ -1,12 +1,12 @@
 # Terms of Service
 
-**Effective Date:** 13 July 2026
+**Effective Date:** 15 July 2026
 
 ## 1. Introduction
 
 Welcome to **FareKeep**. These Terms of Service ("Terms") govern your access to and use of the FareKeep mobile application (the "App"), including any content, features, and services offered through the App. FareKeep is a tax record-keeping and vehicle logbook management tool designed primarily for users in **Australia**, including ride-source drivers, delivery drivers, taxi drivers, and sole traders.
 
-By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App. Please also review our [Privacy Policy](privacy_policy.md), which describes how we collect, use, and protect your information.
+By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App. Please also review our [Privacy Policy](privacy), which describes how we collect, use, and protect your information.
 
 ## 2. Eligibility
 
@@ -19,13 +19,16 @@ FareKeep provides tools to help you:
 - Record income and expense transactions with receipt attachments
 - Save incomplete transactions and trips as drafts for later completion
 - Maintain vehicle logbooks and trip records for tax purposes
+- Close open-ended logbooks when a vehicle is sold or retired from business use
 - Record period-end odometer snapshots for accurate logbook tracking
 - Track GST obligations and generate GST/BAS-related reports
 - Manage multiple business profiles with separate records
 - Generate PDF and Excel reports for tax reporting
+- Export logbook trip summaries and transaction records as downloadable PDF documents
 - Back up and restore your data to your personal Google Drive
 - Archive completed financial years
 - Receive local notification reminders for BAS/GST lodgement deadlines
+- Optimise device storage by converting receipt images and auditing large PDF attachments
 
 The App stores your data locally on your device. Cloud features (backup, archive) are user-initiated and communicate directly with your personal Google Drive account. We do not operate any external data servers.
 
@@ -46,9 +49,25 @@ We expressly disclaim any liability for errors, omissions, or inaccuracies in ta
 
 ## 5. User Accounts & Authentication
 
-- The App uses **Firebase Anonymous Authentication** to generate an anonymous user identifier (UID) on your device. This UID does not require you to create an account or provide any personal information.
-- If you use the backup or archive features, you will be asked to sign in with your **Google Account** via Google Sign-In. This authentication is used solely to access your personal Google Drive.
-- You are responsible for maintaining the security of your device and your Google Account credentials.
+### 5.1 Authentication Methods
+
+The App offers the following ways to use FareKeep:
+
+- **Guest Mode:** On first launch, the App uses **Firebase Anonymous Authentication** to generate an anonymous user identifier (UID) on your device. This UID does not require you to create an account or provide any personal information. Guest users have full access to core features but cannot use cloud backup, archive, or promo code features.
+- **Apple Sign-In:** You can sign in with your **Apple ID** to create a full account. This provides your name and email address (or a private relay email if you choose to hide your email).
+- **Google Sign-In:** You can sign in with your **Google Account** to create a full account. This provides your name and email address, and enables access to Google Drive for backup and archive features.
+- **Guest-to-Signed-In Upgrade:** If you start as a Guest, you can later link your account to Apple or Google Sign-In from **Settings → Account**. All your existing local data is preserved.
+
+You are responsible for maintaining the security of your device, your Apple ID, and your Google Account credentials.
+
+### 5.2 Account Deletion
+
+You can delete your account at any time from within the App by navigating to **Settings → Account → Danger Zone**. Two options are available:
+
+- **Delete Cloud Account:** Removes your authentication credentials from our cloud servers. Your local data (transactions, trips, logbooks) remains on your device, and you revert to Guest mode. Any existing backups in your Google Drive are not automatically deleted.
+- **Delete Account & Data:** Removes your cloud account **and** permanently erases all local data from your device. Existing backups in your Google Drive remain untouched and must be deleted manually from Google Drive if desired.
+
+Deleting your account does not cancel any active premium subscription. You must manage and cancel subscriptions separately through your device's subscription settings (see Section 6.4).
 
 ## 6. Subscriptions & In-App Purchases
 
@@ -117,9 +136,10 @@ By using the App, you agree to:
 The App integrates with the following third-party services. Your use of these services is subject to their respective terms and conditions:
 
 - **Apple App Store / Google Play Store:** For app distribution, updates, and in-app subscription purchases.
-- **Google Sign-In & Google Drive API:** For user-initiated backup and archive features.
-- **Firebase (Anonymous Authentication & Remote Config):** For anonymous device identification and ATO rate configuration.
-- **RevenueCat:** For subscription entitlement management and purchase verification.
+- **Apple Sign-In:** For user authentication via Apple ID. [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
+- **Google Sign-In & Google Drive API:** For user authentication and user-initiated backup and archive features. [Google Privacy Policy](https://policies.google.com/privacy).
+- **Firebase (Anonymous Authentication & Remote Config):** For anonymous device identification and ATO rate configuration. [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
+- **RevenueCat:** For subscription entitlement management and purchase verification. [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 
 We are not responsible for the availability, accuracy, or conduct of any third-party service. If a third-party service becomes unavailable or changes its terms, certain features of the App may be affected.
 
