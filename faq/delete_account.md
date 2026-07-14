@@ -15,10 +15,10 @@ If you no longer wish to use FareKeep or want to start fresh, you can permanentl
 
 #### Option A: Delete Cloud Account
 - **What it does:** This option deletes your account from our secure cloud servers (your login credentials).
-- **What it keeps:** All your local trips, transactions, and logbooks will **remain on your device**. Your exsisting backups will stay in your google drive. You can continue using the app as a Guest user.
+- **What it keeps:** All your local trips, transactions, and logbooks will **remain on your device**. Your existing backups will stay in your Google Drive. You can continue using the app as a Guest user.
 
 #### Option B: Delete Account & Data
-- **What it does:** This is a complete wipe. It deletes your cloud account **and** erases all local data stored on your device. Your exsisting backups from google drive will remain untouched (You can delete existing backups from google drive manually).
+- **What it does:** This is a complete wipe. It deletes your cloud account **and** erases all local data stored on your device. Your existing backups from Google Drive will remain untouched (you can delete existing backups from Google Drive manually).
 - **When to use this:** Choose this if you are completely uninstalling the app and want to ensure no trace of your data is left behind on the device or our servers.
 
 > [!NOTE]
