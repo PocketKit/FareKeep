@@ -23,6 +23,7 @@
 - [How Cloud Backup works](faq/cloud_backup) — Google Drive backups
 - [Archiving Financial Years](faq/archives) — Lock old data
 - [ATO 5-Year Record Keeping](faq/ato_record_keeping) — Legal requirements
+- [How to delete your account](faq/delete_account) — Remove your data and account
 
 ## Subscription
 - [Subscription Plans & Promo Codes](faq/subscription_and_promo_codes) — Premium features
