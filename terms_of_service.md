@@ -6,7 +6,7 @@
 
 Welcome to **FareKeep**. These Terms of Service ("Terms") govern your access to and use of the FareKeep mobile application (the "App"), including any content, features, and services offered through the App. FareKeep is a tax record-keeping and vehicle logbook management tool designed primarily for users in **Australia**, including ride-source drivers, delivery drivers, taxi drivers, and sole traders.
 
-By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App. Please also review our [Privacy Policy](privacy_policy.md), which describes how we collect, use, and protect your information.
+By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, you must not use the App. Please also review our [Privacy Policy](privacy), which describes how we collect, use, and protect your information.
 
 ## 2. Eligibility
 
@@ -135,7 +135,7 @@ By using the App, you agree to:
 
 - **You own your data.** All tax records, transactions, logbook entries, receipt attachments, tax form entries, and business profile information you create within the App remain your property.
 - Your data is stored locally on your device. If you use the backup or archive features, your data is stored in your personal Google Drive account. We do not have access to your data at any time.
-- For full details on how we handle your data, please refer to our [Privacy Policy](privacy_policy.md).
+- For full details on how we handle your data, please refer to our [Privacy Policy](privacy).
 - Upon uninstalling the App, all locally stored data is permanently deleted. Data stored on Google Drive will remain in your account unless you manually delete it.
 
 ## 10. Third-Party Services
@@ -194,7 +194,7 @@ If any provision of these Terms is found to be invalid, illegal, or unenforceabl
 
 ## 17. Entire Agreement
 
-These Terms, together with our [Privacy Policy](privacy_policy.md), constitute the entire agreement between you and the developer of FareKeep regarding your use of the App, and supersede any prior agreements or understandings.
+These Terms, together with our [Privacy Policy](privacy), constitute the entire agreement between you and the developer of FareKeep regarding your use of the App, and supersede any prior agreements or understandings.
 
 ## 18. Changes to These Terms
 
