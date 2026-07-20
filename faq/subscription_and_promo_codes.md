@@ -4,9 +4,12 @@ FareKeep offers a **Premium Subscription** that unlocks advanced features to sav
 
 ## Premium Features Include:
 - Unlimited receipt scanning and cloud backups.
-- Advanced GST and Tax Summary reporting.
+- Advanced GST and Tax Summary reporting, including the Tax Wizard and estimated tax calculations.
+- Vehicle deduction comparison (Cents per km vs Logbook method).
 - Historical data access (previous financial years).
 - Multi-business profile management.
+- Colour theme customisation.
+- Financial year archiving.
 
 ## Promo Codes
 If you have received a promotional code for free Premium access:

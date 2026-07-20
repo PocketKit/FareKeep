@@ -9,6 +9,7 @@ Every dollar you earn and spend in your business should be recorded in FareKeep.
 3. Fill in the required fields:
    - **Date** — defaults to today, but you can change it.
    - **Amount** — the total amount including GST (if applicable).
+   - **Related to vehicle?** — (expenses only) if this expense is for a vehicle (fuel, tyres, servicing, etc.), select the relevant logbook from the dropdown. Leave it as "None" if the expense is not vehicle-related. See [Linking expenses to a vehicle](vehicle_linked_expenses) for more details.
    - **Description** — a short note to remind you what this was for (e.g., "Uber fare earnings" or "Fuel at BP").
 
 ### For Expenses

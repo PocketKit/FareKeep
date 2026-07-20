@@ -11,6 +11,7 @@
 - [How GST works on transactions](faq/gst_on_transactions) — The GST toggle explained
 - [What does Claimable % mean?](faq/expense_claimable_percentage) — Business-use deductions
 - [How automatic claimable % works](faq/automatic_claimable_calculation) — Logbook-based
+- [Linking expenses to a vehicle](faq/vehicle_linked_expenses) — Motor vehicle deduction tracking
 - [Attaching receipts & documents](faq/receipts_and_attachments) — Photos, scans & PDFs
 
 ## Logbook & Trips
@@ -26,6 +27,8 @@
 - [What is a BAS?](faq/business_activity_statement) — Business Activity Statement
 - [Australian Financial Year](faq/financial_year_australia) — Jul–Jun explained
 - [Understanding your reports](faq/reports_overview) — GST Report & Tax Summary
+- [Using the Tax Wizard](faq/tax_wizard) — Prepare your annual tax summary step by step
+- [Vehicle deduction methods](faq/vehicle_deduction_methods) — Cents per km vs Logbook explained
 - [BAS due date reminders](faq/bas_due_date_reminders) — Push notification reminders
 
 ## Data Management

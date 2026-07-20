@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** 15 July 2026
+**Effective Date:** 21 July 2026
 
 ## 1. Introduction
 
@@ -20,7 +20,8 @@ We collect information to provide better services to our users. The type of info
 - **Vehicle Information:** Vehicle registration, make, model, year, type, engine capacity, and descriptive notes.
 - **Logbook & Trip Data:** Logbook start/end dates, odometer readings, logbook mode (open-ended or fixed-period), logbook closure details (closing date and final odometer reading), individual trip records including dates, distances, business/personal classification, trip purpose descriptions, and draft status for incomplete trips.
 - **Odometer Snapshots:** Periodic odometer readings (snapshots) for vehicles to accurately estimate business-use percentages across different reporting periods.
-- **Transaction Data:** Income and expense records including dates, amounts, descriptions, expense categories, payment methods, GST amounts, claimable percentages, claimable method (manual or automatic based on logbook data), and draft status for incomplete records.
+- **Transaction Data:** Income and expense records including dates, amounts, descriptions, expense categories, payment methods, GST amounts, claimable percentages, claimable method (manual or automatic based on logbook data), optional logbook linkage for vehicle-related expenses, and draft status for incomplete records.
+- **Tax Form Data:** When using the Tax Wizard to prepare your annual tax summary, you may optionally enter additional information such as salary or wages income, tax withheld from salary, bank interest income, asset depreciation amounts, HELP/HECS student loan status, and PAYG instalment amounts. You also select a preferred vehicle deduction method (Cents per Kilometre or Logbook) for each vehicle. This data is stored locally on your device and is used solely to generate your tax summary report.
 - **Receipt & Document Attachments:** Images captured via the device camera or native document scanner, photos selected from the device gallery, and PDF files picked from device storage. These attachments are compressed and stored locally on your device.
 - **Apple Account Information:** When you sign in via Apple Sign-In, we receive your display name and email address (or a private relay email address if you choose to hide your email). This information is used solely for account identification.
 - **Google Account Information:** When you sign in via Google Sign-In for the backup feature, we access your Google account name and email address solely to authenticate with Google Drive.
@@ -36,7 +37,7 @@ These preferences are stored locally on your device using SharedPreferences and 
 
 - **Anonymous User Identifier:** The App uses Firebase Anonymous Authentication to generate a unique, anonymous user identifier (UID) on first launch. This UID does not contain any personally identifiable information (such as your name, email, or phone number). It is used solely to identify your device for subscription management via RevenueCat (see Section 5). No account creation or personal details are required.
 - **Subscription Status Data:** The App communicates with RevenueCat (our subscription management service) to verify your current subscription status (e.g., free, trial, or premium). RevenueCat receives only your anonymous UID and platform-specific purchase tokens from the App Store or Google Play to validate purchases. No personal data such as your name, email, or payment details is sent to RevenueCat by the App.
-- **ATO Tax Configuration Data:** The App uses Firebase Remote Config to fetch current ATO-related rates (GST rate, cents-per-kilometre rate, maximum kilometre cap) based on the relevant Australian Financial Year. This service communicates with Firebase servers to ensure tax calculation parameters remain current. No personally identifiable information is sent during this process.
+- **ATO Tax Configuration Data:** The App uses Firebase Remote Config to fetch current ATO-related rates (GST rate, cents-per-kilometre rate, maximum kilometre cap, income tax brackets, Medicare levy rate, and HELP repayment thresholds) based on the relevant Australian Financial Year. This service communicates with Firebase servers to ensure tax calculation parameters remain current. No personally identifiable information is sent during this process.
 - **App Version Information:** The App checks for available updates via the Apple App Store or Google Play Store to ensure you are running the latest version. No personal data is transmitted during this check.
 
 ## 3. How We Use Your Data
@@ -45,6 +46,8 @@ We use the information we collect strictly to operate, maintain, and provide the
 
 - **Tax & ATO Compliance Record-Keeping:** To maintain accurate records of income, expenses, trip distances, and logbooks that align with Australian Taxation Office (ATO) standards for ride-sourcing, sole traders, and GST-registered businesses.
 - **GST & Tax Report Generation:** To generate detailed GST reports (PDF), GST spreadsheets (Excel), and annual tax summary reports based on your recorded transactions, aligned with Australian Financial Year quarters (Q1–Q4).
+- **Tax Summary & Estimated Tax Calculation:** To generate an annual Tax Summary Report (PDF) that maps your data to standard ATO Individual Tax Return (ITR) labels, calculates estimated income tax using current tax brackets, Medicare levy, and HELP/HECS repayment obligations, and provides a projected refund or payable amount. These calculations are estimates only and do not constitute tax advice.
+- **Vehicle Deduction Optimisation:** To allow you to compare and select between two ATO-approved vehicle deduction methods — Cents per Kilometre and Logbook — on a per-vehicle basis. The App calculates both methods and pre-selects the one yielding the higher deduction by default, but you can override this selection at any time.
 - **Logbook-Based Expense Calculations:** To automatically calculate business-use percentages for vehicle expenses based on linked logbook trip data, with per-vehicle mileage capping as required by ATO rules.
 - **Multi-Business Management:** To allow you to maintain separate business profiles, each with their own vehicles, transactions, logbooks, and master data.
 - **Backup & Restore:** To securely back up your complete database and attachments to your personal Google Drive account (in a dedicated `FareKeepApp/Backups` folder), so you never lose your tax records.
@@ -73,15 +76,25 @@ Our App integrates the following third-party services. Each provider has their o
 
 - **Apple Sign-In:** Used for secure user authentication via Apple ID. When you sign in with Apple, we receive your name and email address (or a private relay email if you choose to hide your email). This information is used solely to identify your account within the App. [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 - **Google Sign-In:** Used for secure user authentication when connecting to Google Drive for backup and archive features. [Google Privacy Policy](https://policies.google.com/privacy).
-- **Google Drive API:** Used exclusively for the App's user-initiated data backup and financial year archive features. The App only accesses the specific `FareKeepApp` folder and its sub-folders (`Backups`, `Archives`) that it creates in your personal Google Drive. We use the `drive.file` scope, which restricts access to files created by the App only. [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy).
+- **Google Drive API:** Used exclusively for the App's user-initiated data backup and financial year archive features. The App only accesses the specific `FareKeepApp` folder and its sub-folders (`Backups`, `Archives`) that it creates in your personal Google Drive. We use the `drive.file` scope, which restricts access to files created by the App only. The App does not access, read, modify, or delete any other files in your Google Drive. [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy).
 - **Firebase Anonymous Authentication:** Used to create an anonymous user identity on your device without requiring any personal information. This anonymous UID is used to identify your device for subscription management. [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
-- **Firebase Remote Config:** Used to fetch current ATO tax parameters (GST rates, cents-per-km rates, mileage caps) so that tax calculations remain accurate across financial years without requiring an app update. No personal data is collected or transmitted. [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
+- **Firebase Remote Config:** Used to fetch current ATO tax parameters (GST rates, cents-per-km rates, mileage caps, income tax brackets, Medicare levy rates, and HELP repayment thresholds) so that tax calculations remain accurate across financial years without requiring an app update. No personal data is collected or transmitted. [Firebase Privacy Policy](https://firebase.google.com/support/privacy).
 - **RevenueCat:** Used to manage in-app subscriptions and verify purchase entitlements across the Apple App Store and Google Play Store. RevenueCat receives your anonymous UID (generated by Firebase Anonymous Authentication) and platform-specific purchase receipts to validate your subscription status. RevenueCat does not receive your name, email, phone number, or any tax or financial data. [RevenueCat Privacy Policy](https://www.revenuecat.com/privacy/).
 - **Apple App Store / Google Play Store (In-App Purchases):** Subscription purchases are processed entirely by Apple or Google through their respective in-app purchase systems. FareKeep does not collect, process, or store any payment information (such as credit card numbers or billing addresses). All payment processing is handled by Apple or Google in accordance with their privacy policies.
 - **Google Fonts:** The App may download font files from Google's servers to render text in exported PDF reports. No personal data is sent. [Google Fonts Privacy](https://developers.google.com/fonts/faq/privacy).
 - **Google Play Services / Apple App Store:** Used for app distribution and update availability checks. [Google Play Terms](https://play.google.com/about/play-terms/) | [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
-## 6. Subscription Model
+## 6. Google API Services – Limited Use Disclosure
+
+FareKeep's use and transfer of information received from Google APIs adheres to the [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy), including the Limited Use requirements. Specifically:
+
+- FareKeep only requests the `drive.file` scope, which limits access to files and folders the App itself creates in your Google Drive.
+- Data received from Google APIs is used solely to provide backup and archive functionality within the App.
+- FareKeep does not transfer Google user data to third parties, except as necessary to provide the backup/archive feature, comply with applicable laws, or as part of a merger/acquisition with prior user notice.
+- FareKeep does not use Google user data for serving advertisements.
+- No human reads your Google user data unless you explicitly provide consent (e.g., for technical support), it is necessary for security purposes, or it is required by law.
+
+## 7. Subscription Model
 
 FareKeep offers both free and premium tiers:
 
@@ -91,15 +104,15 @@ FareKeep offers both free and premium tiers:
 
 Subscriptions are managed through the Apple App Store or Google Play Store. You can manage or cancel your subscription at any time through your device's subscription settings. No payment information is collected or stored by the App.
 
-## 7. Data Storage & Retention
+## 8. Data Storage & Retention
 
-- **Local Device Storage:** All sensitive tax data, logbook records, business profiles, and receipt attachments are stored locally on your device in a secure SQLite database and the app's private document directory. This data never leaves your device unless you explicitly initiate a backup or archive upload.
+- **Local Device Storage:** All sensitive tax data, logbook records, business profiles, tax form entries, and receipt attachments are stored locally on your device in a secure SQLite database and the app's private document directory. This data never leaves your device unless you explicitly initiate a backup or archive upload.
 - **App Preferences:** Non-sensitive settings (theme mode, colour selection, notification frequency, onboarding state) are stored locally using SharedPreferences.
 - **Cloud Storage (User-Initiated Only):** If you choose to use the backup or archive feature, your data is compressed into a ZIP file and uploaded directly to your personal Google Drive. **We do not operate any external servers and do not store, process, or have access to your data on any server we control.** The data flows directly between your device and your personal Google Drive account.
 - **Generated Reports:** PDF and Excel reports are generated and stored locally on your device. They are only shared externally if you explicitly choose to share or export them.
 - **Anonymous UID:** The Firebase Anonymous Authentication UID is stored locally on your device and with Firebase. It contains no personal information and is used solely for subscription verification.
 
-## 8. Data Deletion
+## 9. Data Deletion
 
 You have full control over your data at all times:
 
@@ -113,7 +126,7 @@ You have full control over your data at all times:
 - **Cancel Subscription:** You can cancel your premium subscription at any time through the Apple App Store or Google Play Store subscription management settings. Cancellation will take effect at the end of your current billing period. Deleting your account does not automatically cancel your subscription.
 - **Uninstall the App:** Removing the App from your device will delete all locally stored data, including the database, all receipt attachments, and your anonymous UID. Your subscription (if active) can still be managed through the App Store or Play Store.
 
-## 9. Data Security
+## 10. Data Security
 
 We value your trust in providing us your information and implement the following security measures:
 
@@ -125,15 +138,15 @@ We value your trust in providing us your information and implement the following
 
 However, please remember that no method of electronic storage or transmission over the internet is 100% secure. We encourage you to keep your device and Google account secured with strong passwords and biometric authentication.
 
-## 10. Children's Privacy
+## 11. Children's Privacy
 
 FareKeep is a business and tax record-keeping tool designed for use by adults. We do not knowingly collect personal information from children under the age of 18. If you are a parent or guardian and believe your child has provided information through the App, please contact us so we can take appropriate action.
 
-## 11. Changes to This Privacy Policy
+## 12. Changes to This Privacy Policy
 
 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top. For substantial changes to our data handling practices, we may also notify you via in-app alerts or forced update prompts. You are advised to review this Privacy Policy periodically.
 
-## 12. Contact Us
+## 13. Contact Us
 
 If you have any questions, suggestions, or concerns regarding your privacy, our data collection practices, or specific ATO compliance features within the App, please do not hesitate to contact us at:
 
