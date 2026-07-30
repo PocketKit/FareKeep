@@ -24,15 +24,19 @@ The PDF will open directly on your device so you can review, save, or share it.
 This report gives you a complete picture of your income, expenses, and deductions for a given financial year — ideal for your annual tax return.
 
 **What it shows:**
-- **ATO ITR Label Mapping** — your figures are mapped to standard ATO Individual Tax Return labels (e.g., Item 1: Salary, Item 15: Business Income, D1: Motor Vehicle Expenses, D5: Other Expenses), so your accountant can quickly transfer the numbers.
+- **Page 1 — ATO ITR Label Mapping** — your figures are mapped to standard ATO Individual Tax Return labels (e.g., Item 1: Salary, Item 15: Business Income, D1: Motor Vehicle Expenses, D5: Other Expenses), so your accountant can quickly transfer the numbers.
 - Total income by payment method
 - Total expenses by category
 - Motor vehicle deductions per vehicle, showing the selected method (Cents per km or Logbook) and the deduction amount for each
 - General (non-vehicle) business expense deductions
 - Salary, interest, depreciation, and PAYG instalment amounts (if entered via the Tax Wizard)
 - **Estimated Tax Outcome** — including estimated income tax, Medicare levy, HELP/HECS repayment (if applicable), and a projected refund or amount payable
-- Itemised lists of all business income and expenses
-- A business trip log showing all logbook trip data for the period
+- **Pages 2–3 — Business Income & Expenses** — itemised lists of all business income and expenses
+- **Page 4 — Employment Deductions & ATO Compliance Audit:**
+  - **Employment Income Breakdown:** Gross Salary, PAYG Tax Withheld, Allowances, and Lump Sum Leave Payouts across all jobs.
+  - **Work Deductions Table:** Itemised D1–D10 deduction breakdown, including WFH hours (calculated at the ATO 67c/hr fixed rate), employment vehicle expenses, and asset depreciation.
+  - **ATO Compliance Audit Status:** A visual banner confirming 100% ATO compliance or listing specific statutory warnings (e.g., 5,000 km cap exceeded, $300 receipt limits, duplicate WFH claims).
+- **Page 5 — Business Trip Logbook** — a full trip-by-trip listing of all logbook records for the period
 
 **How to generate it:**
 1. Go to **Settings → Tax Summary Report**.

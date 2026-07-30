@@ -40,9 +40,18 @@ Enter the dollar amounts for any items you toggled on in Step 1:
 - **Depreciation** amount for work-related assets.
 - **PAYG Instalments** paid directly to the ATO.
 
-### Step 4: Review
+### Step 4: Review & ATO Audit
 
-A summary of everything you've entered. Review the figures and tap **Finish & Review** to save.
+This step displays a comprehensive summary of your tax position, including:
+
+- **Employment Income:** Aggregated salary, tax withheld, allowances, and lump sum payments across all your active and archived employment profiles for the financial year.
+- **Itemised Work Deductions (D1–D10):** A breakdown of your total employment-related deductions, including D1 Car expenses, D2 Travel, D3 Uniform/Laundry, D4 Self-Education, D5 WFH (total hours × 67c/hr) and asset depreciation, D9 Donations, and D10 Tax Affairs.
+- **ATO Compliance Audit:** FareKeep automatically runs a series of compliance checks against known ATO rules and flags any issues:
+  - **5,000 km Cap:** Warns if your total cents-per-km car claim exceeds the statutory 5,000 km limit.
+  - **$300 Receipt Limit:** Warns if D3 or D5 expenses exceed $300 without documented receipts.
+  - **Duplicate WFH Check:** Warns if more than 16 hours of WFH are logged on a single day across multiple jobs.
+
+A green "100% ATO Compliant" badge appears if no issues are found. Otherwise, specific warnings are listed with ATO references so you can review and correct them.
 
 ## Saving Your Progress
 
@@ -50,7 +59,7 @@ You can tap **Save Draft** at any time to save your progress and return later. Y
 
 ## What Happens Next?
 
-After completing the Tax Wizard, return to the Tax Report screen. FareKeep will combine your wizard entries with your recorded transactions and logbook data to generate a complete **Tax Summary PDF** — including ATO label mapping and an estimated tax outcome.
+After completing the Tax Wizard, return to the Tax Report screen. FareKeep will combine your wizard entries, employment profile data, WFH logs, employment expenses, and asset depreciation with your recorded business transactions and logbook data to generate a complete **Tax Summary PDF** — including ATO label mapping, an itemised D1–D10 deduction breakdown, an ATO compliance audit report, and an estimated tax outcome.
 
 > **Important:** The estimated tax calculation is an approximation only. Always have your accountant or tax agent review the figures before lodging with the ATO.
 

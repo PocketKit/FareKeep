@@ -22,12 +22,17 @@
 - [What are Trip Purposes?](faq/trip_purpose) — Categorising your trips
 - [What are Odometer Snapshots?](faq/odometer_snapshots) — Exact vs estimated method
 
+## Employment & WFH
+- [Managing Employment Profiles](faq/managing_employment) — Active/Archived jobs & Free vs Premium limits
+- [Logging Work From Home (WFH) Hours](faq/wfh_logging) — Quick vs Detailed modes & the 67c/hr rate
+- [Employment Expenses & Asset Depreciation](faq/employment_expenses_and_assets) — D1-D5 categories and asset write-offs
+
 ## Tax & GST
 - [What is GST Registration?](faq/gst_registration) — When and why to register
 - [What is a BAS?](faq/business_activity_statement) — Business Activity Statement
 - [Australian Financial Year](faq/financial_year_australia) — Jul–Jun explained
 - [Understanding your reports](faq/reports_overview) — GST Report & Tax Summary
-- [Using the Tax Wizard](faq/tax_wizard) — Prepare your annual tax summary step by step
+- [Using the Tax Wizard](faq/tax_wizard) — Prepare your annual tax summary & ATO compliance audit
 - [Vehicle deduction methods](faq/vehicle_deduction_methods) — Cents per km vs Logbook explained
 - [BAS due date reminders](faq/bas_due_date_reminders) — Push notification reminders
 

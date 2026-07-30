@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** 21 July 2026
+**Effective Date:** 31 July 2026
 
 ## 1. Introduction
 
@@ -17,6 +17,9 @@ We collect information to provide better services to our users. The type of info
 ### 2.1 Information You Provide
 
 - **Business Profile Information:** Business name, Australian Business Number (ABN), GST registration status, and optional business logo image.
+- **Employment Profile Information:** Employer name, ABN, job title, salary/hourly rate, tax-free threshold claiming status, and whether the job is eligible for Work From Home (WFH) deductions.
+- **Work From Home (WFH) Data:** WFH calendar logs including specific dates, start and end times, and break durations.
+- **Employment Expenses & Assets:** Work-related expenses (D1-D5 categories), asset purchase dates, purchase costs, and calculated depreciation data (e.g. Low-Value Pool, Prime Cost).
 - **Vehicle Information:** Vehicle registration, make, model, year, type, engine capacity, and descriptive notes.
 - **Logbook & Trip Data:** Logbook start/end dates, odometer readings, logbook mode (open-ended or fixed-period), logbook closure details (closing date and final odometer reading), individual trip records including dates, distances, business/personal classification, trip purpose descriptions, and draft status for incomplete trips.
 - **Odometer Snapshots:** Periodic odometer readings (snapshots) for vehicles to accurately estimate business-use percentages across different reporting periods.
@@ -37,7 +40,7 @@ These preferences are stored locally on your device using SharedPreferences and 
 
 - **Anonymous User Identifier:** The App uses Firebase Anonymous Authentication to generate a unique, anonymous user identifier (UID) on first launch. This UID does not contain any personally identifiable information (such as your name, email, or phone number). It is used solely to identify your device for subscription management via RevenueCat (see Section 5). No account creation or personal details are required.
 - **Subscription Status Data:** The App communicates with RevenueCat (our subscription management service) to verify your current subscription status (e.g., free, trial, or premium). RevenueCat receives only your anonymous UID and platform-specific purchase tokens from the App Store or Google Play to validate purchases. No personal data such as your name, email, or payment details is sent to RevenueCat by the App.
-- **ATO Tax Configuration Data:** The App uses Firebase Remote Config to fetch current ATO-related rates (GST rate, cents-per-kilometre rate, maximum kilometre cap, income tax brackets, Medicare levy rate, and HELP repayment thresholds) based on the relevant Australian Financial Year. This service communicates with Firebase servers to ensure tax calculation parameters remain current. No personally identifiable information is sent during this process.
+- **ATO Tax Configuration Data:** The App uses Firebase Remote Config to fetch current ATO-related rates (GST rate, cents-per-kilometre rate, maximum kilometre cap, income tax brackets, Medicare levy rate, HELP repayment thresholds, WFH fixed rate, and asset write-off limits) based on the relevant Australian Financial Year. This service communicates with Firebase servers to ensure tax calculation parameters remain current. No personally identifiable information is sent during this process.
 - **App Version Information:** The App checks for available updates via the Apple App Store or Google Play Store to ensure you are running the latest version. No personal data is transmitted during this check.
 
 ## 3. How We Use Your Data
@@ -46,9 +49,11 @@ We use the information we collect strictly to operate, maintain, and provide the
 
 - **Tax & ATO Compliance Record-Keeping:** To maintain accurate records of income, expenses, trip distances, and logbooks that align with Australian Taxation Office (ATO) standards for ride-sourcing, sole traders, and GST-registered businesses.
 - **GST & Tax Report Generation:** To generate detailed GST reports (PDF), GST spreadsheets (Excel), and annual tax summary reports based on your recorded transactions, aligned with Australian Financial Year quarters (Q1–Q4).
-- **Tax Summary & Estimated Tax Calculation:** To generate an annual Tax Summary Report (PDF) that maps your data to standard ATO Individual Tax Return (ITR) labels, calculates estimated income tax using current tax brackets, Medicare levy, and HELP/HECS repayment obligations, and provides a projected refund or payable amount. These calculations are estimates only and do not constitute tax advice.
+- **Tax Summary & Estimated Tax Calculation:** To generate an annual Tax Summary Report (PDF) that maps your data to standard ATO Individual Tax Return (ITR) labels, calculates estimated income tax using current tax brackets, Medicare levy, and HELP/HECS repayment obligations, and provides a projected refund or payable amount. This includes aggregating your active and archived employment incomes and itemised work deductions. These calculations are estimates only and do not constitute tax advice.
 - **Vehicle Deduction Optimisation:** To allow you to compare and select between two ATO-approved vehicle deduction methods — Cents per Kilometre and Logbook — on a per-vehicle basis. The App calculates both methods and pre-selects the one yielding the higher deduction by default, but you can override this selection at any time.
 - **Logbook-Based Expense Calculations:** To automatically calculate business-use percentages for vehicle expenses based on linked logbook trip data, with per-vehicle mileage capping as required by ATO rules.
+- **Employment Expenses & Asset Depreciation:** To calculate the ATO 67c/hr fixed rate for logged WFH hours, and to calculate accurate depreciation on employment assets (using Immediate Deduction, Low-Value Pool, Prime Cost, or Diminishing Value methods).
+- **ATO Compliance Auditing:** To automatically perform compliance checks on your data (e.g., verifying the 5,000 km cents-per-km limit, $300 receipt limits, and 16h daily WFH limits) to warn you of potential ATO audit flags.
 - **Multi-Business Management:** To allow you to maintain separate business profiles, each with their own vehicles, transactions, logbooks, and master data.
 - **Backup & Restore:** To securely back up your complete database and attachments to your personal Google Drive account (in a dedicated `FareKeepApp/Backups` folder), so you never lose your tax records.
 - **Financial Year Archiving:** To archive completed financial years, including exporting transaction data to CSV, bundling receipt attachments and generated reports into a ZIP archive, and optionally uploading the archive to your Google Drive (in a dedicated `FareKeepApp/Archives` folder). You may also delete local attachment copies after archiving to free device storage.

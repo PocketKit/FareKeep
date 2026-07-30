@@ -3,9 +3,11 @@
 FareKeep offers a **Premium Subscription** that unlocks advanced features to save you time and maximize your deductions.
 
 ## Premium Features Include:
-- Unlimited receipt scanning and cloud backups.
-- Advanced GST and Tax Summary reporting, including the Tax Wizard and estimated tax calculations.
+- **Unlimited Employment Profiles** — manage multiple concurrent jobs (Free Tier limited to 1).
+- Advanced GST and Tax Summary reporting, including the Tax Wizard, ATO compliance audit, and estimated tax calculations.
+- Itemised D1–D10 employment deduction breakdown in the Tax Report PDF.
 - Vehicle deduction comparison (Cents per km vs Logbook method).
+- Unlimited receipt scanning and cloud backups.
 - Historical data access (previous financial years).
 - Multi-business profile management.
 - Colour theme customisation.
