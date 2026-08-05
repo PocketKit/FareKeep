@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Effective Date:** 31 July 2026
+**Effective Date:** 6 August 2026
 
 ## 1. Introduction
 
@@ -23,6 +23,7 @@ FareKeep provides tools to help you:
 - Record employment-related expenses and calculate asset depreciation (Prime Cost, Diminishing Value, Low-Value Pool)
 - Maintain vehicle logbooks and trip records for tax purposes
 - Link expense transactions to specific vehicles via their logbooks for accurate motor vehicle deduction tracking
+- Quickly add a new vehicle directly from the transaction form with minimal details (registration number only); vehicle and logbook records are created with placeholder data that you can complete later from the Logbook screen
 - Close open-ended logbooks when a vehicle is sold or retired from business use
 - Record period-end odometer snapshots for accurate logbook tracking
 - Track GST obligations and generate GST/BAS-related reports

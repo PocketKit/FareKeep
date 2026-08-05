@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective Date:** 31 July 2026
+**Effective Date:** 6 August 2026
 
 ## 1. Introduction
 
